@@ -14,13 +14,13 @@ System automatycznego podlewania roślin oparty na Raspberry Pi z wizualnym sche
 ---
 
 ### 2. Gotowe urządzenie
-<details>
+<details open>
   <summary open>📸 Kliknij, aby zobaczyć zrzuty ekranu</summary>
   <br>
   <p align="center">
     <img src="https://github.com/HelenaMaslowska/Water-pot/blob/main/Photos/IMG_6929.jpg" alt="1" height="400">
     <img src="https://github.com/HelenaMaslowska/Water-pot/blob/main/Photos/IMG_6933.jpg" alt="2" height="400">
-    
+    <img src="https://github.com/HelenaMaslowska/Water-pot/blob/main/Photos/terminal.png" alt="2" height="400">
   </p>
 </details>
 
