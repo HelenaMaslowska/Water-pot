@@ -10,11 +10,16 @@ Podłącz elementy ze sobą jak w dokumentacji załączonej tutaj:
 Raspberry Pi wyświetl poprzez HDMI na monitorze, np. na telewizorze.
 Po uruchomieniu się Raspberry, co może zająć do 3min, uruchom 2 terminale.
 
-W pierwszym wpisz:
+Pierwszy terminal:
+```
 python doniczka3.py
+```
 
-W drugim:
-node-red
+Drugi terminal:
+```
+1. W terminalu wpisz: node-red
+2. Otwórz przeglądarkę i przejdź pod adres: `http://127.0.0.1:1880/ui`
+```
 
 ## 📸 Zdjęcia poglądowe
 
@@ -27,7 +32,7 @@ node-red
 
 ### 3. Gotowe urządzenie
 <details open>
-  <summary open>📸 Kliknij, aby zobaczyć zrzuty ekranu</summary>
+  <summary>📸 Kliknij, aby zobaczyć zrzuty ekranu</summary>
   <br>
   <p align="center">
     <img src="https://github.com/HelenaMaslowska/Water-pot/blob/main/Photos/IMG_6929.jpg" alt="1" height="400">
@@ -40,57 +45,6 @@ node-red
 
 ---
 
-```
-
-### Krok 2 – Włącz Node-RED jako usługę systemową
-
-```bash
-# Uruchom Node-RED przy starcie systemu
-sudo systemctl enable nodered.service
-
-# Uruchom natychmiast
-sudo systemctl start nodered.service
-```
-
-### Krok 3 – Zainstaluj wymagane węzły (nodes)
-
-```bash
-cd ~/.node-red
-
-# Węzły GPIO dla Raspberry Pi
-npm install node-red-node-pi-gpio
-
-# Węzły dashboardu (panel wizualny)
-npm install node-red-dashboard
-
-# Opcjonalnie: powiadomienia MQTT
-npm install node-red-contrib-mqtt-broker
-```
-
-### Krok 4 – Importuj schemat blokowy (flows)
-1. W terminalu wpisz: node-red
-2. Otwórz przeglądarkę i przejdź pod adres: `http://127.0.0.1:1880/ui`
-
-
-### Krok 5 – Podłącz hardware
-
-Sprawdź schemat w `docs/okablowanie.pdf` i podłącz:
-
-```
-Czujnik wilgotności  →  GPIO 4  (wejście cyfrowe)
-Przekaźnik (pompa)   →  GPIO 17 (wyjście cyfrowe)
-GND                  →  Pin 6
-3.3V                 →  Pin 1
-```
-
-### Krok 6 – Otwórz dashboard
-
-Przejdź pod adres:
-
-```
-http://<adres-ip-raspberry>:1880/ui
-```
-
 Zobaczysz panel z:
 - aktualnym poziomem wilgotności gleby
 - historycznym wykresem pomiarów
@@ -101,14 +55,11 @@ Zobaczysz panel z:
 
 ## 🔧 Konfiguracja
 
-Główne parametry edytujesz bezpośrednio w węźle **„Konfiguracja"** w Node-RED lub w pliku `docs/konfiguracja.md`:
-
 | Parametr | Domyślna wartość | Opis |
 |---|---|---|
 | `PROG_WILGOTNOSCI` | `30` | Próg (%) poniżej którego uruchamia się pompa |
-| `CZAS_PODLEWANIA` | `5` | Czas pracy pompy w sekundach |
-| `INTERWAL_POMIARU` | `60` | Co ile sekund odczytywany jest czujnik |
-| `TRYB` | `auto` | Tryb pracy: `auto` lub `manual` |
+| `CZAS_PODLEWANIA` | `1` | Czas pracy pompy w sekundach |
+| `INTERWAL_POMIARU` | `20` | Co ile sekund odczytywany jest czujnik |
 
 ---
 
