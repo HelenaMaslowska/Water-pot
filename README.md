@@ -7,15 +7,22 @@ System automatycznego podlewania roślin oparty na Raspberry Pi z wizualnym sche
 ## 📸 Zdjęcia poglądowe
 
 ### 1. Okablowanie – czujnik wilgotności i pompa
-![Schemat okablowania]()
+![Schemat okablowania](https://github.com/HelenaMaslowska/Water-pot/blob/main/Photos/fritzig.png)
 
 *Połączenie czujnika wilgotności gleby z pinami GPIO Raspberry Pi oraz podłączenie pompy przez przekaźnik.*
 
 ---
 
 ### 2. Gotowe urządzenie
-![Gotowe urządzenie](https://github.com/HelenaMaslowska/Water-pot/blob/main/Photos/IMG_6929.jpg)
-![Caly widok](https://github.com/HelenaMaslowska/Water-pot/blob/main/Photos/IMG_6933.jpg)
+<details>
+  <summary open>📸 Kliknij, aby zobaczyć zrzuty ekranu</summary>
+  <br>
+  <p align="center">
+    <img src="https://github.com/HelenaMaslowska/Water-pot/blob/main/Photos/IMG_6929.jpg" alt="1" height="400">
+    <img src="https://github.com/HelenaMaslowska/Water-pot/blob/main/Photos/IMG_6933.jpg" alt="2" height="400">
+    
+  </p>
+</details>
 
 *Kompletne urządzenie zainstalowane przy pojemniku do testów – Raspberry Pi, czujnik napięcia i wąż doprowadzający wodę.*
 
