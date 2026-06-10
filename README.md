@@ -14,9 +14,10 @@ System automatycznego podlewania roślin oparty na Raspberry Pi z wizualnym sche
 ---
 
 ### 2. Gotowe urządzenie
-![Gotowe urządzenie]()
+![Gotowe urządzenie](https://github.com/HelenaMaslowska/Water-pot/blob/main/Photos/IMG_6929.jpg)
+![Caly widok](https://github.com/HelenaMaslowska/Water-pot/blob/main/Photos/IMG_6933.jpg)
 
-*Kompletne urządzenie zainstalowane przy doniczce – Raspberry Pi, czujnik w glebie i wąż doprowadzający wodę.*
+*Kompletne urządzenie zainstalowane przy pojemniku do testów – Raspberry Pi, czujnik napięcia i wąż doprowadzający wodę.*
 
 ---
 
