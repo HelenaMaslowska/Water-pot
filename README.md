@@ -4,23 +4,35 @@ System automatycznego podlewania roślin oparty na Raspberry Pi z wizualnym sche
 
 ---
 
+### 1. Instrukcja uruchomienia
+Podłącz elementy ze sobą jak w dokumentacji załączonej tutaj: 
+
+Raspberry Pi wyświetl poprzez HDMI na monitorze, np. na telewizorze.
+Po uruchomieniu się Raspberry, co może zająć do 3min, uruchom 2 terminale.
+
+W pierwszym wpisz:
+python doniczka3.py
+
+W drugim:
+node-red
+
 ## 📸 Zdjęcia poglądowe
 
-### 1. Okablowanie – czujnik wilgotności i pompa
+### 2. Okablowanie – czujnik wilgotności i pompa
 ![Schemat okablowania](https://github.com/HelenaMaslowska/Water-pot/blob/main/Photos/fritzig.png)
 
 *Połączenie czujnika wilgotności gleby z pinami GPIO Raspberry Pi oraz podłączenie pompy przez przekaźnik.*
 
 ---
 
-### 2. Gotowe urządzenie
+### 3. Gotowe urządzenie
 <details open>
   <summary open>📸 Kliknij, aby zobaczyć zrzuty ekranu</summary>
   <br>
   <p align="center">
     <img src="https://github.com/HelenaMaslowska/Water-pot/blob/main/Photos/IMG_6929.jpg" alt="1" height="400">
     <img src="https://github.com/HelenaMaslowska/Water-pot/blob/main/Photos/IMG_6933.jpg" alt="2" height="400">
-    <img src="https://github.com/HelenaMaslowska/Water-pot/blob/main/Photos/terminal.png" alt="2" height="400">
+    <img src="https://github.com/HelenaMaslowska/Water-pot/blob/main/Photos/terminal.png" alt="3" height="400">
   </p>
 </details>
 
